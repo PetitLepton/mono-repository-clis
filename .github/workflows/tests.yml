@@ -5,7 +5,7 @@ on: pull_request
 
 jobs:
   code_validation:
-    runs-on: ubuntu-latest-arm64
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
