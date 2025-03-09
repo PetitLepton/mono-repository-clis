@@ -31,4 +31,4 @@ filterwarnings = [
 ]
 
 [tool.coverage.run]
-omit = ["packages/*/src/*/__init__.py", "packages/*/tests/*"]
+omit = ["packages/*/src/*/__init__.py"]
