@@ -17,3 +17,18 @@ virtual-stations = { workspace = true }
 
 [tool.uv.workspace]
 members = ["packages/forecasts", "packages/virtual-stations"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "pytest-cov>=6.0.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov-report term-missing --cov packages -ra"
+filterwarnings = [
+    "ignore::DeprecationWarning"
+]
+
+[tool.coverage.run]
+omit = ["packages/*/src/*/__init__.py", "packages/*/tests/*"]
