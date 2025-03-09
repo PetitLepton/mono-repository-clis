@@ -1,8 +1,7 @@
 ---
 name: Tests
 
-on:
-  workflow_call:
+on: pull_request
 
 jobs:
   code_validation:
